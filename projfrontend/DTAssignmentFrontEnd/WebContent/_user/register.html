@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register New User</title>
+</head>
+<body>
+	<div class="row" style="width:50%">
+		<form name="adduser" ng-submit="registerUser(adduser.$valid)">
+			<fieldset>
+				<div id="legend">
+					<legend class="">Register</legend>
+				</div>
+				<div id="name-group" class="form-group-lg">
+					<input type="text" required name="name" ng-model="user.username"
+						class="form-control" placeholder="User Name">
+				</div>
+				<div id="name-group" class="form-group-lg">
+					<input type="email" required name="email" ng-model="user.email"
+						class="form-control" placeholder="Email">
+				</div>
+				<div id="name-group" class="form-group-lg">
+					<input type="password" required ng-model="user.password"
+						name="password" class="form-control "
+						placeholder="Password atleast 6 character">
+				</div>
+				<div id="name-group" class="form-group-lg">
+					<button type="submit" class="form-control btn btn-info" value="Register"></button>
+				</div>
+				</fieldset>
+		</form>
+	</div>
+
+
+
+
+</body>
+</html>
